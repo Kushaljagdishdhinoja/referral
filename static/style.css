@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#app {
+    width: 400px;
+    max-width: 100%;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.view {
+    display: none;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #1877f2;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    background: #165eab;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+#signup-success {
+    color: green;
+    font-weight: bold;
+}
+
+#signup-error {
+    color: red;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+
+/* Existing styles... */
+
+.radio-group {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.radio-group label {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Ensure buttons and inputs align correctly */
+input[type="radio"] {
+    vertical-align: middle;
+}
+
+label {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Additional padding for the form sections */
+input, button {
+    margin-bottom: 15px;
+}
+
+#referral h2, #referral h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
