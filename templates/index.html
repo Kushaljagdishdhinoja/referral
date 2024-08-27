@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referral PWA</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="manifest" href="/static/m.json">
+</head>
+<body>
+    <div id="app">
+        <div id="initial" class="view">
+            <button onclick="showSignUp()">Sign Up</button>
+            <button onclick="showLogin()">Login</button>
+        </div>
+
+        <div id="signup" class="view">
+            <h2>Sign Up</h2>
+            <input type="text" id="signup-phone" placeholder="Phone Number">
+            <input type="password" id="signup-password" placeholder="Password">
+            <button onclick="signUp()">Sign Up</button>
+            <button onclick="showInitial()">Back</button>
+            <div id="signup-success" style="display:none; color: green; font-weight: bold;">
+                Successfully signed up!
+            </div>
+            <div id="signup-error" style="display:none; color: red; font-weight: bold;"></div>
+        </div>
+
+        <div id="login" class="view" style="display:none;">
+            <h2>Login</h2>
+            <input type="text" id="login-phone" placeholder="Phone Number">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <button onclick="showInitial()">Back</button>
+        </div>
+
+        <div id="referral" class="view" style="display:none;">
+            <h2>Send Referral</h2>
+            <input type="text" id="contact-number" placeholder="Enter contact number">
+            <div>
+                <label>
+                    <input type="radio" name="referral-type" value="buy" checked>
+                    Buy
+                </label>
+                <label>
+                    <input type="radio" name="referral-type" value="sell">
+                    Sell
+                </label>
+            </div>
+            <button onclick="sendReferral()">Send Referral</button>
+            <button onclick="logout()">Logout</button>
+            <h3>Your Referrals:</h3>
+            <ul id="referral-list"></ul>
+        </div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
