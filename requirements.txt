@@ -4,7 +4,7 @@ Flask-Bcrypt==1.0.1
 Flask-CORS==4.0.0
 PyJWT==2.7.0
 gunicorn
-
+pandas
 
 
 
