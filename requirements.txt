@@ -5,6 +5,6 @@ Flask-CORS==4.0.0
 PyJWT==2.7.0
 gunicorn
 pandas
-
+openpyxl
 
 
