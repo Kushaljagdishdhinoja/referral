@@ -77,7 +77,7 @@ function sendReferral() {
     const referralType = document.querySelector('input[name="referral-type"]:checked').value;
 
     const referralCode = localStorage.getItem('referralCode');
-    const referralLink = `https://api.whatsapp.com/send?phone=${contactNumber}&text=Hi%20User%2C%0A%0AYou%20have%20been%20referred%20to%20https%3A%2F%2Fwww.beepkart.com%0A%0ABeepKart%20is%20a%20trusted%20place%20to%20buy%20and%20sell%20used%20bikes.%0A%0AUse%20this%20referral%20code%20to%20transact%20and%20get%20Rs%20500%20%0A%0AReferral%20code%3A%20${referralCode}`;
+    const referralLink = `https://api.whatsapp.com/send?phone=${contactNumber}&text=Hi%20User%2C%0A%0AYou%20have%20been%20referred%20to%20https%3A%2F%2Fwww.beepkart.com%0A%0ABeepKart%20is%20a%20trusted%20place%20to%20buy%20and%20sell%20used%20bikes.%0A%0AUse%20this%20referral%20code%20to%20transact%20and%20get%20Rs%20500%20%0A%0AReferral%20code%3A%20EXP1`;
 
     window.location.href = referralLink;
 
